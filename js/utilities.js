@@ -17,4 +17,9 @@ function getTextValueById(id){
     return textvalueNumber;
 }
 
+// to ghet whole section by ID-- 
 
+function getSectionById(id){
+    const gotSection = document.getElementById(id);
+    return gotSection;
+}

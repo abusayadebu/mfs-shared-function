@@ -22,14 +22,14 @@
      <hr class="text-black">
      <br>
      <div class="flex gap-5">
-        <button id="add-big-btn" class="btn btn-lg bg-purple-500">Add Money</button>
+    <button id="add-big-btn" class="btn btn-lg bg-purple-500">Add Money</button>
      <button id="cash-big-btn" class="btn btn-lg bg-purple-500">Cash Out</button>
      </div>
      <button id="transaction-btn" class="mt-2 btn btn-lg bg-purple-400">Transactions</button> <br>
      
 
      <!-- Add Money form started here -->
-      <div id="add-money-form" class="hidden card bg-purple-400 w-full max-w-xl shrink-0 shadow-2xl">
+      <div id="add-money-form" class="card bg-purple-400 w-full max-w-xl shrink-0 shadow-2xl">
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label text-lg text-black">Add Money Amount</label>
@@ -43,7 +43,7 @@
     </div>
 
     <!-- cashOut form starts here -->
-      <div id="cashOut-form" class="card bg-purple-600 w-full max-w-xl shrink-0 shadow-2xl">
+      <div id="cashOut-form" class="hidden card bg-purple-600 w-full max-w-xl shrink-0 shadow-2xl">
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label text-lg text-black">Cash Out Amount</label>
@@ -56,11 +56,17 @@
       </div>
     </div>
 
+    <!-- transaction container -->
+      <div id="transaction-div" class="hidden">
+        <h2 class="text-center text-xl font-bold text-black">Transaction History</h2>
+      </div>
+
 
 
     <!-- script linkedup here -->
      <script src="js/utilities.js"></script>
      <script src="js/addmoney.js"></script>
      <script src="js/cashout.js"></script>
+     <script src="js/features.js"></script>
 </body>
 </html>
