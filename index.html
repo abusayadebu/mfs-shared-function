@@ -9,10 +9,43 @@
     <title>MF-Shared Funciton</title>
 </head>
 
-<body>
-    <h1>hello mfs in shared function</h1>
+<body class="flex justify-center items-center min-h-screen">
+
+    <!-- phone mockup started here -->
+    <div class="mockup-phone h-170">
+  <div class="mockup-phone-camera"></div>
+  <div class="h-170 mockup-phone-display text-white grid place-content-center bg-blue-100">
+
+    <!-- phone display exact here -->
+     <h3 id="main-balance" class="text-5xl text-black font-bold text-center">55000</h3>
+     <p class="text-black text-center">Available Balance</p>
+     <hr class="text-black">
+     <br>
+     <div class="flex gap-5">
+        <button id="add-big-btn" class="btn btn-lg bg-purple-500">Add Money</button>
+     <button id="cash-big-btn" class="btn btn-lg bg-purple-500">Cash Out</button>
+     </div>
+     <button id="transaction-btn" class="mt-2 btn btn-lg bg-purple-400">Transactions</button> <br>
+     
+
+     <!-- Add Money form started here -->
+      <div id="add-money-form" class="card bg-purple-400 w-full max-w-xl shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-lg text-black">Add Money Amount</label>
+          <input id="add-amount" type="phone" class="input text-black" placeholder="Amount" />
+          <label class="label text-lg text-black">Pin Number</label>
+          <input id="pin-number" type="password" class="input text-black" placeholder="Enter Your Pin" />
+
+          <button id="add-money-btn" class="btn btn-neutral mt-4">Add Money</button>
+        </fieldset>
+      </div>
+    </div>
+
+
 
     <!-- script linkedup here -->
-     <script src="js/script.js"></script>
+     <script src="js/utilities.js"></script>
+     <script src="js/addmoney.js"></script>
 </body>
 </html>
