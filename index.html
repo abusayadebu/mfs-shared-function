@@ -29,7 +29,7 @@
      
 
      <!-- Add Money form started here -->
-      <div id="add-money-form" class="card bg-purple-400 w-full max-w-xl shrink-0 shadow-2xl">
+      <div id="add-money-form" class="hidden card bg-purple-400 w-full max-w-xl shrink-0 shadow-2xl">
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label text-lg text-black">Add Money Amount</label>
@@ -42,10 +42,25 @@
       </div>
     </div>
 
+    <!-- cashOut form starts here -->
+      <div id="cashOut-form" class="card bg-purple-600 w-full max-w-xl shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-lg text-black">Cash Out Amount</label>
+          <input id="cashout-amount" type="phone" class="input text-black" placeholder="Amount" />
+          <label class="label text-lg text-black">Pin Number</label>
+          <input id="cashout-pin" type="password" class="input text-black" placeholder="Enter Your Pin" />
+
+          <button id="cashout-btn" class="btn btn-neutral mt-4">cash Out</button>
+        </fieldset>
+      </div>
+    </div>
+
 
 
     <!-- script linkedup here -->
      <script src="js/utilities.js"></script>
      <script src="js/addmoney.js"></script>
+     <script src="js/cashout.js"></script>
 </body>
 </html>
