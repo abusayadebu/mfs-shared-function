@@ -20,6 +20,10 @@ function getTextValueById(id){
 // to ghet whole section by ID-- 
 
 function getSectionById(id){
-    const gotSection = document.getElementById(id);
-    return gotSection;
+    document.getElementById("add-money-form").classList.add("hidden");
+    document.getElementById("cashOut-form").classList.add("hidden");
+    document.getElementById("transaction-div").classList.add("hidden")
+
+    document.getElementById(id).classList.remove("hidden");
+    
 }
